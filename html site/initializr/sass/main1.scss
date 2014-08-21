@@ -1,0 +1,187 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@import "constant";
+
+.page-title{
+  font-family:minangkabau;
+  font-size: 12vw;
+  text-align: center;
+  color: #f5eed8;
+}
+.main-div{
+  background: $darkbg;
+  min-width: 100vw;
+  width: auto!important;
+  min-height: 90vh;
+  height: auto!important;
+  position: relative;
+  input[type=text]:focus, textarea:focus {
+    box-shadow: none;
+    outline: none;
+    border: 4px solid $darkf;
+  }
+  p{
+    clear: both;
+    margin: 0;
+  }
+  div{
+    img{
+      margin-top: 5vh
+    }
+    div{
+      border: 5px solid $darkf;
+      border-radius: 5px;
+      background-color:$darkf;
+      width: 100%;
+      height: 48px;
+      margin-top: 7vh;
+      input{
+        height: 40px;
+        border: 5px solid $darkf;
+      }
+      img{
+        max-height: 42px;
+        max-width: 45px;
+        cursor:pointer;
+        margin: 0;
+      }
+    }
+  }
+}
+.bot-hr{
+  position: absolute;
+  bottom: 5px;
+}
+.top-hr{
+  position: absolute;
+  top: 5px;
+}
+.space-p{
+  font-size: 5px;
+  margin: 0;
+}
+.container-fluid{
+  margin: 0;
+  padding: 0;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+  padding: 0;
+}
+.col-xs-1,.col-xs-11{
+  padding: 0;
+  margin: 0;
+}
+.anime-dir{
+  @extend %bazar-heading;
+  font-size: 30px;
+  cursor:pointer;
+  color: #f5eed8;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 1px #000000;
+}
+.anime-dir:hover{
+
+  color: #f2d28f;
+}
+.recent-title{
+  @extend %bazar-heading;
+  font-size: 60px;
+  color: $darkf;
+  margin:0;
+  text-shadow:1px 1px 1px #ffffff ,3px 3px 1px #000000;
+  margin-top: 3vh;
+}
+.recent-added{
+  clear: both;
+  background: $lightbg;
+  width: 100vw;
+  position: relative;
+  p{
+    clear: both;
+    margin: 0;
+  }
+  div{
+    hr{
+      border-bottom: 1px solid black ;
+      padding: 5px 0 5px 0;
+    }
+    p{
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      clear: none;
+    }
+  }
+}
+.recent-thumb{
+  background: #fbfaf6;/*
+    height: 75px;*/
+  margin: 1vh;
+  border-radius: 5px;
+  border: 3px solid #fbfaf6;
+
+}
+.recent-th-title{
+  @extend %bazar-heading;
+  color: $darkf;
+  margin: 0;
+  text-transform:uppercase;
+  font-weight: 200;
+  padding:1vh
+}
+hr{
+  border: 0;
+  height: 1px;
+  border-bottom: 1px dashed #ccc;
+  margin: 0;
+  width: 100vw;
+}
+body{
+  overflow-x: hidden;
+}
+.footer{
+  background-color: $orangebg ;
+  position: relative;
+  h1{
+    @extend %bazar-heading;
+    font-size: 40px;
+    color: #f5eed8;
+    margin:0;
+    text-shadow:1px 1px 1px #000000 ,2px 2px 1px #f5eed8;;
+    margin-top: 3vh;
+  }
+  div{
+    div{
+      hr{
+        border-bottom: 1px solid white ;
+        padding: 5px 0 5px 0;
+      }
+      p{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color: #fdfdfd;
+      }
+    }
+  }
+  .social{
+    margin-top:3vh
+  }
+}
+.footer-txt{
+  @extend %bazar-heading;
+  font-size: 20px;
+  color: #f5eed8;
+  margin:0;
+  clear: both;
+}
+
+
+
+
+
+

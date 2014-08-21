@@ -1,0 +1,39 @@
+@import "constant";
+@import "top-bar-social";
+body{
+  background-color: $lightbg;
+}
+#anime-dir{
+  h1{
+    @extend %bazar-heading;
+    font-size: 60px;
+    color: $darkf;
+    margin:0;
+    text-shadow:1px 1px 1px #ffffff ,3px 3px 1px #000000;
+    margin-top: 3vh;
+  }
+  div{
+    hr{
+      margin: 0;
+      background-color: #000000;
+      color: #000000;
+      margin-top: 10px;
+    }
+    p{
+      text-align: center  ;
+    }
+  }
+  @include tablet{
+    h1{
+      font-size: 45px;
+    }
+  }
+  @include phone{
+    h1{
+      font-size: 35px;
+    }
+  }
+}
+#sort-bar{
+
+}

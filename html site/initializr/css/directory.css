@@ -1,0 +1,153 @@
+@font-face {
+  font-family: 'minangkabau';
+  src: url(./../fonts/Minangkabau.woff) format("woff");
+}
+@font-face {
+  font-family: 'bazar';
+  src: url(./../fonts/Bazar.woff) format("woff");
+}
+#anime-dir h1 {
+  font-family: bazar;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'minangkabau';
+  src: url(./../fonts/Minangkabau.woff) format("woff");
+}
+@font-face {
+  font-family: 'bazar';
+  src: url(./../fonts/Bazar.woff) format("woff");
+}
+#anime-dir h1 {
+  font-family: bazar;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  padding: 0;
+}
+
+.top-bar {
+  background: #777777;
+}
+.top-bar #top-bar-logo {
+  cursor: pointer;
+}
+.top-bar img {
+  cursor: pointer;
+}
+.top-bar div div .padding-lr-35 {
+  padding: 0 0vw 0 4vw;
+}
+@media only screen and (max-width: 480px) {
+  .top-bar div div .padding-lr-35 {
+    padding: 0;
+  }
+}
+.top-bar div div .padding-lr-35 .search-box {
+  border: 5px solid #3a3a3a;
+  border-radius: 5px;
+  background-color: #3a3a3a;
+}
+@media only screen and (max-width: 480px) {
+  .top-bar div div .padding-lr-35 .search-box {
+    border-radius: 2px;
+  }
+}
+.top-bar div div .padding-lr-35 .search-box input {
+  border: 5px solid #3a3a3a;
+}
+@media only screen and (max-width: 480px) {
+  .top-bar div div .padding-lr-35 .search-box input {
+    border-top: 2px solid #3a3a3a;
+    border-bottom: 2px solid #3a3a3a;
+  }
+}
+.top-bar div div .padding-lr-35 .search-box input[type=text]:focus, .top-bar div div .padding-lr-35 .search-box textarea:focus {
+  box-shadow: none;
+  outline: none;
+  border: 4px solid #3a3a3a;
+}
+@media only screen and (max-width: 480px) {
+  .top-bar div div .padding-lr-35 .search-box input[type=text]:focus, .top-bar div div .padding-lr-35 .search-box textarea:focus {
+    border-top: 1px solid #3a3a3a;
+    border-bottom: 1px solid #3a3a3a;
+  }
+}
+.top-bar div div .padding-lr-35 .search-box img {
+  max-height: 42px;
+  max-width: 45px;
+  cursor: pointer;
+  margin: 0;
+  float: left;
+  padding-top: 4px;
+}
+.top-bar div div .padding-lr-35 .search-box img :hover {
+  background-color: black;
+}
+.top-bar div div .padding-lr-35 .social {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.top-bar div div .padding-lr-35 .social :hover {
+  background-color: #3a3a3a;
+  padding: 2px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  background-color: #e2dccc;
+}
+
+#anime-dir h1 {
+  font-size: 60px;
+  color: #3a3a3a;
+  margin: 0;
+  text-shadow: 1px 1px 1px #ffffff ,3px 3px 1px #000000;
+  margin-top: 3vh;
+}
+#anime-dir div hr {
+  margin: 0;
+  background-color: #000000;
+  color: #000000;
+  margin-top: 10px;
+}
+#anime-dir div p {
+  text-align: center;
+}
+@media only screen and (max-width: 760px) {
+  #anime-dir h1 {
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #anime-dir h1 {
+    font-size: 35px;
+  }
+}
