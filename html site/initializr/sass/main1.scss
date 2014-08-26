@@ -52,14 +52,6 @@
     }
   }
 }
-.bot-hr{
-  position: absolute;
-  bottom: 5px;
-}
-.top-hr{
-  position: absolute;
-  top: 5px;
-}
 .space-p{
   font-size: 5px;
   margin: 0;
@@ -133,13 +125,6 @@
   font-weight: 200;
   padding:1vh
 }
-hr{
-  border: 0;
-  height: 1px;
-  border-bottom: 1px dashed #ccc;
-  margin: 0;
-  width: 100vw;
-}
 body{
   overflow-x: hidden;
 }
@@ -149,7 +134,7 @@ body{
   h1{
     @extend %bazar-heading;
     font-size: 40px;
-    color: #f5eed8;
+    color: $lightf;
     margin:0;
     text-shadow:1px 1px 1px #000000 ,2px 2px 1px #f5eed8;;
     margin-top: 3vh;
@@ -164,7 +149,7 @@ body{
         margin: 0;
         padding: 0;
         text-align: center;
-        color: #fdfdfd;
+        color: $lightf;
       }
     }
   }

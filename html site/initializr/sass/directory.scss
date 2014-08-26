@@ -1,7 +1,7 @@
-@import "constant";
 @import "top-bar-social";
 body{
   background-color: $lightbg;
+  overflow-x: hidden;
 }
 #anime-dir{
   h1{
@@ -18,6 +18,7 @@ body{
       background-color: #000000;
       color: #000000;
       margin-top: 10px;
+      border-bottom: 1px solid #000000;
     }
     p{
       text-align: center  ;
@@ -30,10 +31,78 @@ body{
   }
   @include phone{
     h1{
-      font-size: 35px;
+      font-size: 25px;
+      text-shadow:1px 1px 1px #ffffff ,1px 1px 1px #000000;
+    }
+    div{
+      hr{
+        margin-top: 5px;
+      }
+      p{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        clear: none;
+        font-size: 10px;
+      }
     }
   }
 }
 #sort-bar{
+  background-color: $orangebg;
+  clear: left;
+  text-align: center;
+  position: relative;
+  width: 100vw;
+  z-index: 9999;
+  @include tablet{
+    font-size:100%;
+  }
+  @include phone {
+    width: 100%;
+  }
 
+  div{
+    @extend %bazar-heading;
+    color: $lightf;
+    margin: 0 auto;
+    font-size: 36px;
+    display: inline-block;
+    margin: 1vh auto;
+    padding: 0 2vw;
+    text-shadow: 1px 1px 1px #000000;
+
+    @include tablet{
+        font-size: 28px;
+    }
+    @include phone {
+        font-size: 14px;
+      margin-left: 8px;
+    }
+  }
+}
+.content{
+  margin-top: 35px;
+  @include tablet{
+    margin-top: 28px;
+  }
+  @include phone {
+    margin-top: 16px;
+  }
+  .content-thumb{
+    background: #fbfaf6;/*
+    height: 75px;*/
+    margin: 1vh;
+    border-radius: 5px;
+    border: 3px solid #fbfaf6;
+
+  }
+  .content-th-title{
+    @extend %bazar-heading;
+    color: $darkf;
+    margin: 0;
+    text-transform:uppercase;
+    font-weight: 200;
+    padding:1vh
+  }
 }

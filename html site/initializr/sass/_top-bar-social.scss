@@ -2,6 +2,7 @@
 .top-bar{
   #top-bar-logo{
     cursor: pointer;
+    margin-bottom: 5px;
   }
   img{
     cursor: pointer;
@@ -15,14 +16,15 @@
           padding: 0;
         }
       .search-box {
-        border: 5px solid $darkf;
+        border: 2px solid $darkf;
         border-radius: 5px;
         background-color: $darkf;
+        margin-bottom: 5px;
         @include phone{
           border-radius: 2px;
         }
         input {
-          border: 5px solid $darkf;
+          border: 3px solid $darkf;
           @include phone{
             border-top: 2px solid $darkf;
             border-bottom: 2px solid $darkf;
@@ -31,19 +33,17 @@
         input[type=text]:focus, textarea:focus {
           box-shadow: none;
           outline: none;
-          border: 4px solid $darkf;
+          border: 2px solid $darkf;
           @include phone{
             border-top: 1px solid $darkf;
             border-bottom: 1px solid $darkf;
           }
         }
         img {
-          max-height: 42px;
-          max-width: 45px;
           cursor: pointer;
           margin: 0;
           float: left;
-          padding-top: 4px;
+          padding-top: 0px;
           :hover {
             background-color: $darkf - 100;
           }
@@ -61,5 +61,6 @@
         }
       }
     }
+    position: relative;
   }
 }
