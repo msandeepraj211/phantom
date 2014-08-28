@@ -6,11 +6,21 @@
   font-family: 'bazar';
   src: url(./../fonts/Bazar.woff) format("woff");
 }
+@font-face {
+  font-family: 'Korean_Calligraphy';
+  src: url(./../fonts/Korean_Calligraphy.woff) format("woff");
+}
 #anime-dir h1, #sort-bar div, .content .content-th-title {
   font-family: bazar;
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
+}
+
+.page-title {
+  font-family: minangkabau;
+  font-weight: 500;
+  text-align: center;
 }
 
 .container-fluid {
@@ -47,6 +57,15 @@ hr {
   cursor: pointer;
   margin-bottom: 5px;
 }
+@media only screen and (max-width: 480px) {
+  .top-bar #top-bar-logo {
+    width: 15.25424%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
 .top-bar img {
   cursor: pointer;
 }
@@ -54,52 +73,17 @@ hr {
   position: relative;
 }
 .top-bar div div .padding-lr-35 {
-  padding: 0 0vw 0 4vw;
+  padding: 0 0vw 0 2vw;
 }
 @media only screen and (max-width: 480px) {
   .top-bar div div .padding-lr-35 {
     padding: 0;
+    width: 49.15254%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
   }
-}
-.top-bar div div .padding-lr-35 .search-box {
-  border: 2px solid #3a3a3a;
-  border-radius: 5px;
-  background-color: #3a3a3a;
-  margin-bottom: 5px;
-}
-@media only screen and (max-width: 480px) {
-  .top-bar div div .padding-lr-35 .search-box {
-    border-radius: 2px;
-  }
-}
-.top-bar div div .padding-lr-35 .search-box input {
-  border: 3px solid #3a3a3a;
-}
-@media only screen and (max-width: 480px) {
-  .top-bar div div .padding-lr-35 .search-box input {
-    border-top: 2px solid #3a3a3a;
-    border-bottom: 2px solid #3a3a3a;
-  }
-}
-.top-bar div div .padding-lr-35 .search-box input[type=text]:focus, .top-bar div div .padding-lr-35 .search-box textarea:focus {
-  box-shadow: none;
-  outline: none;
-  border: 2px solid #3a3a3a;
-}
-@media only screen and (max-width: 480px) {
-  .top-bar div div .padding-lr-35 .search-box input[type=text]:focus, .top-bar div div .padding-lr-35 .search-box textarea:focus {
-    border-top: 1px solid #3a3a3a;
-    border-bottom: 1px solid #3a3a3a;
-  }
-}
-.top-bar div div .padding-lr-35 .search-box img {
-  cursor: pointer;
-  margin: 0;
-  float: left;
-  padding-top: 0px;
-}
-.top-bar div div .padding-lr-35 .search-box img :hover {
-  background-color: black;
 }
 .top-bar div div .padding-lr-35 .social {
   -webkit-transition: all 0.2s ease-in-out;
@@ -107,6 +91,11 @@ hr {
   -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+@media only screen and (max-width: 480px) {
+  .top-bar div div .padding-lr-35 .social {
+    display: none;
+  }
 }
 .top-bar div div .padding-lr-35 .social :hover {
   background-color: #3a3a3a;
@@ -116,6 +105,155 @@ hr {
   -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+
+.search-box {
+  border: 2px solid #3a3a3a;
+  border-radius: 5px;
+  background-color: #3a3a3a;
+  margin-bottom: 5px;
+}
+@media only screen and (max-width: 480px) {
+  .search-box {
+    border-radius: 2px;
+  }
+}
+.search-box input {
+  border: 3px solid #3a3a3a;
+}
+@media only screen and (max-width: 480px) {
+  .search-box input {
+    border-top: 2px solid #3a3a3a;
+    border-bottom: 2px solid #3a3a3a;
+  }
+}
+.search-box input[type=text]:focus, .search-box textarea:focus {
+  box-shadow: none;
+  outline: none;
+  border: 2px solid #3a3a3a;
+}
+@media only screen and (max-width: 480px) {
+  .search-box input[type=text]:focus, .search-box textarea:focus {
+    border-top: 1px solid #3a3a3a;
+    border-bottom: 1px solid #3a3a3a;
+  }
+}
+.search-box img {
+  cursor: pointer;
+  margin: 0;
+  float: left;
+  padding-top: 3px;
+  padding-left: 1px;
+}
+.search-box img :hover {
+  background-color: black;
+}
+
+.page-title {
+  font-size: 52px;
+  color: #f5eed8;
+  margin: 0;
+  padding: 0;
+  text-shadow: 1px 1px 1px #000000 ,1px 1px 1px #ffffff;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1210px) {
+  .page-title {
+    font-size: 46px;
+  }
+}
+@media only screen and (max-width: 1055px) {
+  .page-title {
+    font-size: 43px;
+  }
+}
+@media only screen and (max-width: 961px) {
+  .page-title {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 764px) {
+  .page-title {
+    font-size: 36px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .page-title {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .page-title {
+    font-size: 27px;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .page-title {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .page-title {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .page-title {
+    font-size: 27px;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .page-title {
+    font-size: 24px;
+  }
+}
+
+.page-caption {
+  font-family: Korean_Calligraphy;
+  font-weight: 500;
+  text-align: right;
+  font-size: 18px;
+  color: #f5eed8;
+  margin: 0;
+  padding: 0;
+  text-shadow: 1px 1px 1px #000000 ,1px 1px 1px #ffffff;
+  cursor: pointer;
+}
+@media only screen and (max-width: 961px) {
+  .page-caption {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .page-caption {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .page-caption {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .page-caption {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .page-caption {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .page {
+    margin-top: 7px;
+    width: 32.20339%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 16.94915%;
+    clear: none;
+  }
 }
 
 body {

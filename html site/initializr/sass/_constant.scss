@@ -6,6 +6,10 @@
   font-family: 'bazar';
   src:url(./../fonts/Bazar.woff) format('woff');
 }
+@font-face {
+  font-family: 'Korean_Calligraphy';
+  src:url(./../fonts/Korean_Calligraphy.woff) format('woff');
+}
 @mixin phone{
   @media only screen and (max-width: 480px) {
         @content;
@@ -13,6 +17,11 @@
 }
 @mixin tablet{
   @media only screen and (max-width: 760px) {
+    @content;
+  }
+}
+@mixin screens($scwidth){
+  @media only screen and (max-width: $scwidth) {
     @content;
   }
 }
@@ -33,6 +42,11 @@ $orangebg:#F28A6E;
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
+}
+%minangkabau-heading{
+  font-family: minangkabau;
+  font-weight: 500;
+  text-align: center;
 }
 .container-fluid{
   margin: 0;

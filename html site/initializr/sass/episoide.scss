@@ -1,0 +1,53 @@
+@import "top-bar-direct";
+body{
+  background-color: $lightbg;
+}
+#episoide-title{
+  h1{
+    @extend %bazar-heading;
+    font-size: 40px;
+    color: $darkf;
+    margin:0;
+    text-shadow:1px 1px 1px #ffffff ,2px 2px 1px #000000;
+    margin-top: 3vh;
+  }
+}
+#description-title,#episoide-list-title{
+  margin-top: 3vh;
+  background-color: $orangebg;
+  h1{
+    @extend %bazar-heading;
+    font-size: 30px;
+    color: $lightf;
+    margin:0;
+  }
+}
+#anime-picture{
+    img{
+      padding-right: 2vw;
+      border-right: 3px solid $orangebg;
+      border-bottom: 4vh solid transparent;
+      border-top: 4vh solid transparent;
+      margin-top: 1vh;
+      @include phone{
+        border: 0;
+      }
+    }
+}
+
+#anime-description{
+  p{
+    font-family: bazar;
+    text-align: justify;
+    padding-left: 2vw;
+    border-left: 3px solid $orangebg;
+    border-bottom: 4vh solid transparent;
+    border-top: 4vh solid transparent;
+    margin-top: 1vh;
+    text-transform: lowercase;
+    font-weight: 400;
+    @include phone{
+      border: 0;
+    }
+  }
+}

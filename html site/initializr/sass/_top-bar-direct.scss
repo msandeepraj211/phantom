@@ -23,23 +23,11 @@
           @include grid-span(6,7);
 
         }
-        .social {
-          @include phone{
-            display: none;
-          }
-          @include transition(all,0.2s,ease-in-out);
-          :hover {
-            background-color: $darkf;
-            padding: 2px;
-            @include  transition(all,0.2s,ease-in-out);
-          }
-        }
       }
     }
     position: relative;
   }
 }
-
 .search-box {
   border: 2px solid $darkf;
   border-radius: 5px;
@@ -143,5 +131,29 @@
   @include phone{
     margin-top: 7px;
     @include grid-span(4,3)
+  }
+}
+.anime-dir{
+  :hover{
+    color: #f2d28f;
+  }
+  h1{
+    @extend %bazar-heading;
+    font-size: 33px;
+    color: $lightf;
+    margin:0;
+    padding: 0;
+    text-shadow:1px 2px 1px #000000 ,1px 1px 1px #ffffff;
+    cursor: pointer;
+    @include screens(961px){
+      font-size: 25px;
+    }
+    @include tablet{
+      font-size: 18px;
+    }
+    @include phone{
+      display: none;
+    }
+
   }
 }

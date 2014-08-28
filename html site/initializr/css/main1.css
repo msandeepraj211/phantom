@@ -9,6 +9,10 @@
   font-family: 'bazar';
   src: url(./../fonts/Bazar.woff) format("woff");
 }
+@font-face {
+  font-family: 'Korean_Calligraphy';
+  src: url(./../fonts/Korean_Calligraphy.woff) format("woff");
+}
 .anime-dir, .recent-title, .recent-th-title, .footer h1, .footer-txt {
   font-family: bazar;
   font-weight: 500;

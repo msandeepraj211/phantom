@@ -1,5 +1,6 @@
 require 'sass-globbing'
-
+require 'singularitygs'
+require 'breakpoint'
 
 
 project_type=:stand_alone

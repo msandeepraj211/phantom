@@ -2,22 +2,23 @@
  * Created by raj on 15/8/14.
  */
 var fs = require('fs');
-var content = fs.read ('animeList.txt');
+var content = fs.read ('animeList.json');
 var animeList = JSON.parse(content);
 var animeEpisode=[];
-var k=5;
-animeEpisode[k]=[];
 var nextPresent=false;
 function pages(m,k){
     var page=new WebPage();
     nextPresent=false;
-    animeEpisode[k]=[];
+    if (m == 1) {
+        animeEpisode[k] = [];
+    }
     page.open(animeList[k].link + '/page/' + m, function (status) {
         console.log('opened animeList? ' + animeList[k].link + '/page/' + m + " : ", status);
-        if (status == fail) {
+        if (status == 'fail') {
+            page.close();
             pages(m, k);
         }
-        if (status == success) {
+        if (status == 'success') {
 
         page.includeJs('http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js', function () {
             console.log('jq included');
@@ -51,9 +52,10 @@ function pages(m,k){
                 console.log('next called');
                 page.close();
                 pages(m + 1, k)
-            }
-            ;
+            };
             if (nextPresent == 'false' && k < animeList.length - 1) {
+                var path = './animeEpisoide/animeEpisode'+k+'.json';
+                fs.write(path, JSON.stringify(animeEpisode[k]), 'w');
                 console.log('next episoide called');
                 page.close();
                 pages(1, k + 1)
@@ -61,11 +63,12 @@ function pages(m,k){
             if (k == animeList.length - 1) {
                 var path = 'animeEpisode.json';
                 fs.write(path, JSON.stringify(animeEpisode), 'w');
+                phantom.exit();
             }
         });
     }
     });
 }
-pages(1,1);
+pages(1,983);
 
 

@@ -3,6 +3,7 @@
  */
 
 var fs = require('fs');
+var recent = fs.read('recent.json')
 
 function pages() {
         var page = new WebPage();
@@ -28,7 +29,9 @@ function pages() {
                         return JSON.stringify(tempdata);
                     });
                     console.log(data);
-                    var path = 'recent.txt';
+                    data = JSON.parse(data);
+
+                    var path = 'recent.json';
                     fs.write(path, data, 'w');
 
                 });
